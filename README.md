@@ -6,7 +6,11 @@ Sono un Junior Full Stack Developer di Pavia. Ho iniziato con il corso intensivo
 
 ## Progetti
 
-**[DreamDex](https://github.com/DGSimone99/DreamDex)**: un team builder per il Pokémon competitivo. Inserisci uno o più Pokémon, ti suggerisce quelli che completano meglio il team, gli dà un voto e spiega come migliorarlo, usando le statistiche d'uso mensili di Smogon. React, TypeScript e Vite, con test in Vitest e pubblicazione automatica su Cloudflare Pages. Si usa su [dreamdex.pages.dev](https://dreamdex.pages.dev).
+**[DreamDex](https://github.com/DGSimone99/DreamDex)** ([dreamdex.pages.dev](https://dreamdex.pages.dev)): un team builder per il Pokémon competitivo, che ho progettato e portato online. Inserisci uno o più Pokémon e il sistema suggerisce i migliori candidati per completare il team, assegna un voto da S a D e propone modifiche per migliorarne le prestazioni, mostrando nel dettaglio i criteri utilizzati.
+
+- Il voto confronta il team con i Pokémon più usati del mese, presi dalle statistiche di Smogon, e richiede migliaia di calcoli di danno. La classifica dei candidati viene calcolata in un Web Worker, così l'interfaccia non si blocca.
+- È in italiano e in inglese, gestisce lotte in singolo e in doppio e si adatta a computer, tablet e telefono.
+- Ha circa 2.500 test automatici. A ogni nuova versione GitHub Actions li esegue e, solo se passano tutti, pubblica il sito su Cloudflare Pages.
 
 **[MyGamingJournal](https://github.com/DGSimone99/mygamingjournal-api)**: un diario dei videogiochi con libreria personale, obiettivi, recensioni e matchmaking. Il backend è in Spring Boot e Java 21 con PostgreSQL, autenticazione JWT e i dati dei giochi presi da RAWG.
 
